@@ -4,7 +4,7 @@ The N1 Theme Starter is a basic starter for any theme you want to create for [Ny
 ## Getting Started
 Creating a new theme in N1 is easy! Here's how you can do it.
 
-1. Fork this repo or download the code. Add a name, display name, and description for your theme to `package.json`, and change the directory name to match.
+1. Fork this repo or download the code. Add a name, display name, title, and description for your theme to `package.json`, and change the directory name to match.
 
 2. Open N1 and install the theme by going to `Nylas N1 > Install New Theme...` and selecting the directory.
 
