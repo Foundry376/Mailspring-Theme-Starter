@@ -1,83 +1,52 @@
-// Change these variables to modify your theme!
+/*
+Include the standard variables from Mailspring's base theme:
+https://github.com/Foundry376/Mailspring/blob/master/app/static/base/ui-variables.less#L37:L40
+*/
+@import "base/ui-variables";
 
-//=============================== Components ===========================//
+@gray-base: #ffffff;
+@gray-darker: darken(@gray-base, 13.5%);
+@gray-dark: darken(@gray-base, 20%);
+@gray: darken(@gray-base, 33.5%);
+@gray-light: darken(@gray-base, 46.7%);
+@gray-lighter: darken(@gray-base, 92.5%);
+@white: #0a0a0a;
 
-//== Toolbar
-@toolbar-background-color: darken(@white, 17.5%);
+@accent-primary: #58b660;
+@accent-primary-dark: darken(@accent-primary, 10%);
 
-//== Account Sidebar
-@panel-background-color:         @gray-lighter;
-@source-list-bg:                 @panel-background-color;
-@source-list-active-bg:          @panel-background-color;
-@source-list-active-color:       @component-active-color;
+@background-primary: #212121;
+@background-off-primary: #212121;
+@background-secondary: #121212;
+@background-tertiary: #6d7987;
 
-//== Thread List (e.g, `.list-group-item`, `.list-item`)
-@list-bg:                  @white;
-@list-border:              #ddd;
-@list-hover-bg:            darken(@list-bg, 4%);
-@list-focused-color:       @list-bg;
-@list-focused-bg:          @component-active-color;
-@list-focused-border:      @list-focused-bg;
-@list-selected-color:      inherit;
-@list-selected-bg:         mix(@component-active-color, @list-bg, 17%);
-@list-selected-border:     mix(@component-active-color, @list-bg, 50%);
-
-//== Notifications
-@background-color-info: @blue-light;
-@background-color-success: #009ec4;
-@background-color-warning: #ff4800;
-@background-color-error: #f15f4b;
-@background-color-pending: #b4babd;
-
-//== Menus
-@menu-item-color-hover: fade(@blue-light, 10%);
-@menu-item-color-selected: @blue-light;
-@menu-text-color-selected: @text-color-inverse;
-
-//== Sizes
-@input-font-size: 14px;
-@component-padding: 10px;
-@component-icon-padding: 5px;
-@component-icon-size: 16px;
-@component-line-height: 25px;
-@component-border-radius: 2px;
-
-
-//=============================== Colors ===============================//
-
-@accent-primary:      @blue;
-@accent-primary-dark: @blue-dark;
-
-@background-primary:     @white;
-@background-off-primary: #fdfdfd;
-@background-secondary:   #f6f6f6;
-@background-tertiary:    #6d7987;
-
-@color-info:    @blue-dark;
-@color-success: #5CB346;
-@color-warning: #f0ad4e;
-@color-error:   #d9534f;
-@color-danger:  #d9534f;
-
-@component-active-color:        @accent-primary-dark;
-@component-active-bg:           @background-primary;
-
-@background-gradient: linear-gradient(to top, rgba(241,241,241,0.75) 0%,
-rgba(253,253,253,0.75) 100%);
-
-@border-color-primary: darken(@background-primary, 10%);
-@border-color-secondary: darken(@background-secondary, 10%);
-@border-color-tertiary: darken(@background-tertiary, 10%);
+@border-color-primary: lighten(@background-primary, 10%);
+@border-color-secondary: lighten(@background-secondary, 10%);
+@border-color-tertiary: lighten(@background-tertiary, 10%);
 @border-color-divider: @border-color-secondary;
 
-//============================= Typography =============================//
+@text-color: #eee;
+@text-color-subtle: fadeout(@text-color, 20%);
+@text-color-very-subtle: fadeout(@text-color, 40%);
+@text-color-inverse: white;
+@text-color-inverse-subtle: fadeout(@text-color-inverse, 20%);
+@text-color-inverse-very-subtle: fadeout(@text-color-inverse, 50%);
+@text-color-heading: #fff;
 
-// ----- Colors -----
-@text-color:         @black;
-@text-color-inverse: @white;
+@text-color-link: @accent-primary;
+@text-color-link-hover: @accent-primary-dark;
+@text-color-link-active: @accent-primary-dark;
 
-@text-color-heading: #434648;
+@btn-default-bg-color: lighten(@background-primary, 5%);
+@dropdown-default-bg-color: #404040;
 
-@text-color-link:        @blue;
-@text-color-link-hover:  @blue-dark;
-@text-color-link-active: @blue-dark;
+@input-bg: #2e2e2e;
+@input-border: @border-color-divider;
+
+@list-bg: #333;
+@list-border: #383838;
+@list-selected-color: @text-color-inverse;
+@list-focused-color: @text-color;
+
+@toolbar-background-color: #121212;
+@panel-background-color: #121212;
