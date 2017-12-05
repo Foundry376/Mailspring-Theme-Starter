@@ -19,14 +19,18 @@ Creating a new theme in Mailspring is easy! Here's how you can do it.
 3. Choose `Developer > Run With Debug Flags` for easier debugging.
 
 4. Now, you can start playing with the theme! It's installed in
-   `~/Library/Application Support/Mailspringpackages/THEME_NAME` (on macOS), so
+   `~/Library/Application Support/Mailspring/packages/THEME_NAME` (on macOS), so
    open it from there. Most of Mailspring's React components are derived from
    the core variables defined in `ui-variables.less`, and any changes you make
    there will override the defaults for Mailspring. You can also add more LESS
    files in `styles` (ideally, separated into logical components like
    `thread-list.less`) to make your own specific changes. To reload the theme,
    just open the console (`Developer > Toggle Developer Tools`) and type
-   `AppEnv.themes.activateThemes()`.
+
+   ```
+   AppEnv.themes.setActiveTheme('ui-light');
+   AppEnv.themes.setActiveTheme('your-theme-name');
+   ```
 
 5. Once you're happy with your theme, check how it looks in the theme picker
    (`Mailspring > Change Theme...`). We use your UI variables to pull the
