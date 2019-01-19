@@ -1,7 +1,7 @@
 {
   "name": "theme-starter",
-  "title": "Starer Theme",
-  "displayName": "Starer Theme",
+  "title": "Starter Theme",
+  "displayName": "Starter Theme",
   "theme": "ui",
   "version": "0.1.0",
   "description": "A great dark theme to start your own themes.",
