@@ -1,10 +1,10 @@
 {
-  "name": "theme-starter",
-  "title": "Starter Theme",
-  "displayName": "Starter Theme",
+  "name": "test-theme-starter",
+  "title": "Starter Test Theme",
+  "displayName": "Starter Test Theme",
   "theme": "ui",
   "version": "0.1.0",
-  "description": "A great dark theme to start your own themes.",
+  "description": "Test theme",
   "license": "GPL-3.0",
   "engines": {
     "mailspring": "*"
