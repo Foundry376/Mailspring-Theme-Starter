@@ -18,13 +18,22 @@ Creating a new theme in Mailspring is easy! Here's how you can do it.
 
 3. Choose `Developer > Run With Debug Flags` for easier debugging.
 
-4. Now, you can start playing with the theme! It's installed in
-   `~/Library/Application Support/Mailspring/packages/THEME_NAME` (on macOS), so
-   open it from there. Most of Mailspring's React components are derived from
-   the core variables defined in `ui-variables.less`, and any changes you make
-   there will override the defaults for Mailspring. You can also add more LESS
-   files in `styles` (ideally, separated into logical components like
-   `thread-list.less`) to make your own specific changes. To reload the theme,
+4. Now, you can start playing with the theme!  
+   Depending on your OS, the theme is installed in one of the following location:
+
+   | OS           | Location                                                     |
+   |--------------|--------------------------------------------------------------|
+   | macOS        | ~/Library/Application Support/Mailspring/packages/THEME_NAME |
+   | Ubuntu native| ~/.config/Mailspring/packages/THEME_NAME                     |
+   | Ubuntu Snap  | ~/snap/mailspring/common/packages/THEME_NAME                 |
+   | Windows      | %appdata%\Mailspring\packages\THEME_NAME                     |
+
+   Open the theme in this directory and work on it here.
+
+   Most of Mailspring's React components are derived from the core variables defined in `ui-variables.less`,
+   and any changes you make there will override the defaults for Mailspring.
+   You can also add more LESS files in `styles` (ideally, separated into logical components
+   like `thread-list.less`) to make your own specific changes. To reload the theme,
    just open the console (`Developer > Toggle Developer Tools`) and type
 
    ```
